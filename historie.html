@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Historie</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop()>25)
+             {
+                $('.menuhide').fadeOut(1000);
+             }
+            else
+             {
+              $('.menuhide').fadeIn(1000);
+             }
+         });
+
+         function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+        </script>
+        
+</head>
+<body>
+    <header>
+    
+
+        <!-- Mobil Menu -->
+            <div class="topnav">
+              <a href="index.html" class="active"><img class="mobillogo" src="mobillogo.svg"><img class="logo" src="mobiltekst.svg"></a>
+              <div id="myLinks">
+                <a href="index.html">Forside</a>
+                <a href="historie.html">Historie</a>
+                <a href="ture.html">Vores ture</a>
+                <a href="book.html">Book</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- Script 2 hører til her -->
+                <i class="fa fa-bars"></i>
+              </a>
+            
+            </div>
+        <!-- Slut Mobil Menu -->
+        
+        <!-- Desktop navigation -->
+                <div class="menu">
+                        <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="historie.html">Historie</a></li>
+                        <a href="index.html"><img  src="logo.png"></a>
+                        <li><a href="ture.html">Vores ture</a></li>
+                        <li><a href="book.html">Book</a></li>
+                        </ul>
+                        
+                </div>
+                <div class="menuhide">
+                    <img class="name" src="name_2.png">  <!-- Script 1 hører til her og skjuler en del af logo på scroll -->
+                </div>
+        <!-- Desktop navigation slut -->
+            </header>
+
+    <main>
+        <div class="fullw-img">
+            <img src="historie.jpg" alt="">
+        </div>
+        <div class="sitecontent">
+            <div class="textbox">
+                <h1>Sjelborggårds Historie</h1>
+                <p>Sjelborggård er en gammel kommunegård opført i ca. 1860. I gamle dage refererede man til gården som Kommunegården og Sjelborggårdsvej hed dengang Kommunegårdsvej. 
+                    <br><br>
+                    Beliggende i Sjelborgdalen nord for Hjerting ligger altså denne velbevarede 1800-tals gård, der i dag har status som bevaringsværdig.
+                    
+                    Dette betyder også at du som besøgende her på Sjelborggård får et blik ind i historiens byggekultur, imens du nyder den idyl den gamle stråtækte gård indgyder. 
+                    <br><br>
+                    Udover at være privat hjem er den 3-længede gård i dag base for avl og træning af islandske heste. 
+                    <br><br>
+                    Velkommen.
+                    </p>
+            </div>
+            <div class="imgbox"><img class="vector" src="vector.svg"></div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p><a href="tel:+4733378901">+45 60 66 08 26</a></p>
+        <p>Sjelborggård Islænderridning</p>
+        <p><a href="mailto:someone@example.com">ridning@sjelborggård.dk</a></p>
+
+    </footer>
+ 
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Vores ture</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop()>25)
+             {
+                $('.menuhide').fadeOut(1000);
+             }
+            else
+             {
+              $('.menuhide').fadeIn(1000);
+             }
+         });
+
+         function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+        </script>
+        
+</head>
+<body>
+    <header>
+    
+
+        <!-- Mobil Menu -->
+            <div class="topnav">
+              <a href="index.html" class="active"><img class="mobillogo" src="mobillogo.svg"><img class="logo" src="mobiltekst.svg"></a>
+              <div id="myLinks">
+                <a href="index.html">Forside</a>
+                <a href="historie.html">Historie</a>
+                <a href="ture.html">Vores ture</a>
+                <a href="book.html">Book</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- Script 2 hører til her -->
+                <i class="fa fa-bars"></i>
+              </a>
+            
+            </div>
+        <!-- Slut Mobil Menu -->
+        
+        <!-- Desktop navigation -->
+                <div class="menu">
+                        <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="historie.html">Historie</a></li>
+                        <a href="index.html"><img  src="logo.png"></a>
+                        <li><a href="ture.html">Vores ture</a></li>
+                        <li><a href="book.html">Book</a></li>
+                        </ul>
+                        
+                </div>
+                <div class="menuhide">
+                    <img class="name" src="name_2.png">  <!-- Script 1 hører til her og skjuler en del af logo på scroll -->
+                </div>
+        <!-- Desktop navigation slut -->
+            </header>
+
+    <main>
+
+        <div class="fullw-img">
+            <img src="front.jpg" alt="">
+        </div>
+
+
+        <div class="sitecontent">
+            <div class="textbox">
+                <h1>Vores ture</h1>
+                <p>Uanset om du er erfaren rytter eller aldrig har sat på en hest, så har vi en tur der passer til dit behov. Vi går op i sikkerhed og sørger for at du er tryg på hesten inden vi rider ud. </p>
+            </div>
+            <div class="imgbox"></div>
+        
+        </div>
+
+        <div class="sitecontent">
+            <div class="textbox">
+                <div class="turfarve">
+                    <img class="logo1" src="grøn tur.svg">
+                    <h1 style="color:#7E9A5B;">Grøn tur</h1>
+                </div>
+                <p>Den grønne tur er for nybegyndere. Her tager vi tingene stille og roligt. Vi sørger for at alle er trygge på den tildelte hest og bruger 10 min på banen så alle deltagere har en fornemmelse af hvordan man drejer, stopper og sætter i gang. Herefter går turen over heden, rundt i skoven og ad stranden tilbage. 
+
+                    Turen foregår primært i skridt, de der har lyst får mulighed for at prøve trav eller tølt på udvalgte strækninger. 
+                    <br> <br>
+                    Varighed: 1,5 time.
+                    <br>
+                    Pris: 350,-
+                    </p>
+            </div>
+            <div class="textbox">
+                <div class="turfarve">
+                    <img class="logo1" src="gul tur.svg">
+                    <h1 style="color:#E0B000;">Gul tur</h1>
+                </div>
+                <p>Den gule tur er for dig der har let til moderat erfaring. Måske har du været med på et par grønne ture og nu har mod på lidt mere. Her rider vi ud på tur med det samme. Turen har flere udvalgte strækninger hvor der tøltes/traves. Har man mod på en galop aftaler man det med guiden inden. 
+                    <br> <br>
+                    Varighed: 1,5 time.
+                    <br>
+                    Pris: 450,-                    
+                    </p>
+            </div>
+            <div class="textbox">
+                <div class="turfarve">
+                    <img class="logo1" src="blå tur.svg">
+                    <h1 style="color:#73ACBF;">Blå tur</h1>
+                </div>
+                <p>Blå tur er for dig der er helt fortrolig med alle gangarter. På turen krydser vi heden, rider inde i skoven på sjove og kringlede ridestier og på denne tur giver vi den også fuld gas på stranden. 
+                    <br> <br>
+                    Varighed: 2 timer. 
+                    <br>
+                    Pris: 500,-
+                                     
+                    </p>
+            </div>
+            <div class="textbox">
+                <div class="turfarve">
+                    <img class="logo1" src="special.svg">
+                    <h1 style="color:#5E4352;">Sjelborggård Special</h1>
+                </div>
+                <p>Sjelborgård Special er en halvdags tur. Turen foregår i alle gangarter, med en pause halvvejs på turen hvor vi nyder en frokost imens hestene får lov at græsse.
+                    <br> <br>
+                    Varighed: 4 timer
+                    <br>
+                    Pris: 850,- (inkl sandwich + vand/kaffe)
+                                        
+                    </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p><a href="tel:+4733378901">+45 60 66 08 26</a></p>
+        <p>Sjelborggård Islænderridning</p>
+        <p><a href="mailto:someone@example.com">ridning@sjelborggård.dk</a></p>
+
+    </footer>
+ 
+
+</body>
+</html>

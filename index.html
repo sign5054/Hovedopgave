@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+    <title>Forside</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop()>25)
+             {
+                $('.menuhide').fadeOut(1000);
+             }
+            else
+             {
+              $('.menuhide').fadeIn(1000);
+             }
+         });
+
+         function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+    </script>
+        
+</head>
+<body>
+    <header>
+    
+
+<!-- Mobil Menu -->
+    <div class="topnav">
+      <a href="index.html" class="active"><img class="mobillogo" src="mobillogo.svg"><img class="logo" src="mobiltekst.svg"></a>
+      <div id="myLinks">
+        <a href="index.html">Forside</a>
+        <a href="historie.html">Historie</a>
+        <a href="ture.html">Vores ture</a>
+        <a href="book.html">Book</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- Script 2 hører til her -->
+        <i class="fa fa-bars"></i>
+      </a>
+    
+    </div>
+<!-- Slut Mobil Menu -->
+
+<!-- Desktop navigation -->
+        <div class="menu">
+                <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="historie.html">Historie</a></li>
+                <a href="index.html"><img  src="logo.png"></a>
+                <li><a href="ture.html">Vores ture</a></li>
+                <li><a href="book.html">Book</a></li>
+                </ul>
+                
+        </div>
+        <div class="menuhide">
+            <img class="name" src="name_2.png">  <!-- Script 1 hører til her og skjuler en del af logo på scroll -->
+        </div>
+<!-- Desktop navigation slut -->
+    </header>
+
+    <main>
+
+        <!-- Video -->
+        <div class="headervideo">
+                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="drone1.mp4" type="video/mp4">
+                        </video>
+
+                            <div class="videotext">
+                            <h1>Video Header</h1>
+                            <p>Using HTML5 Video and Bootstrap</p>
+                            </div>
+        </div>
+        <!-- Video slut -->
+
+        <div class="sitecontent">
+            <div class="textbox">
+                <h1>Sjelborggård ved Esbjerg tilbyder guidede rideture på stabile islandske heste.</h1>
+                <p> Sjelborggård Islænderidning er turridning ved Vestkysten med erfarne guides og veltrænede heste. 
+                    <br> <br>
+                    Sjelborggård ligger i Marbæk plantage og på en ridetur kommer du rundt og ser alle facetter af den fantastiske natur, både hede, strand og skov.
+                    <br> <br> 
+                    Gården er et fristed, fra byens summen og du er velkommen til at blive og evt. nyde en medbragt madpakke efter rideturen. Vores bænke er placeret med udsigt til både havet og de græssende heste. 
+                    <br><br>
+                    <a href="ture.html">Hør mere om vores ture her</a>
+                </p>
+            </div>
+            <div class="imgbox"><img class="vector2" src="vector2.svg"></div>
+        </div>
+
+        <div class="fullw-img">
+            <img src="front1.jpg" alt="">
+        </div>
+
+        <div class="sitecontent">
+            <div class="textbox">
+                <h1>Vores heste</h1>
+                <p> Vi har heste til alle, både begyndere og øvede - fælles er at de er veltrænede så du kan få en god tur. Islændere har behagelige gangarter og alle kan komme med på tur. Dog har vi en vægtgrænse på max 90 kg for at passe på vores heste. 
+                    <br> <br> Mød dem her:
+                </p>
+            </div>
+            <div class="imgbox"></div>
+
+        </div>
+
+
+        <div class="sitecontentgallery">
+      <div class="horseimg">
+          <img src="jarl.jpg" alt="">
+          <p>Jarl fra Nørhave</p>
+      </div>
+      <div class="horseimg">
+        <img src="drengur.jpg" alt="">
+        <p>Drengur fra Sjelborggård</p>
+      </div>
+      <div class="horseimg">
+        <img src="dotla.jpg" alt="">
+        <p>Dõtla fra Sjelborggård</p>
+      </div>
+      <div class="horseimg">
+        <img src="draupnir.jpg" alt="">
+        <p>Draupnir fra Midgaard</p>
+      </div>
+      <div class="horseimg">
+        <img src="fyri.jpg" alt="">
+        <p>Funi fra Sjelborggård</p>
+      </div>
+      <div class="horseimg">
+        <img src="djafur.jpg" alt="">
+        <p>Djafur fra Sjelborggård</p>
+      </div>
+        </div>
+
+        <div class="fullw-img">
+            <img src="luft.jpg" alt="">
+        </div>
+        
+
+        <div id="flockler-embed-1809491df0704f539715ec104399ec45"></div>
+        <script src="https://plugins.flockler.com/embed/180945b48700f52d46b90d8a6ce28ebf/1809491df0704f539715ec104399ec45" async></script>
+        
+   
+    
+    
+    </main>
+
+    <footer>
+        <p><a href="tel:+4733378901">+45 60 66 08 26</a></p>
+        <p>Sjelborggård Islænderridning</p>
+        <p><a href="mailto:someone@example.com">ridning@sjelborggård.dk</a></p>
+        
+    </footer>
+ 
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Book</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop()>25)
+             {
+                $('.menuhide').fadeOut(1000);
+             }
+            else
+             {
+              $('.menuhide').fadeIn(1000);
+             }
+         });
+
+         function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+        </script>
+        
+</head>
+<body>
+    <header>
+    
+
+        <!-- Mobil Menu -->
+            <div class="topnav">
+              <a href="index.html" class="active"><img class="mobillogo" src="mobillogo.svg"><img class="logo" src="mobiltekst.svg"></a>
+              <div id="myLinks">
+                <a href="index.html">Forside</a>
+                <a href="historie.html">Historie</a>
+                <a href="ture.html">Vores ture</a>
+                <a href="book.html">Book</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- Script 2 hører til her -->
+                <i class="fa fa-bars"></i>
+              </a>
+            
+            </div>
+        <!-- Slut Mobil Menu -->
+        
+        <!-- Desktop navigation -->
+                <div class="menu">
+                        <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="historie.html">Historie</a></li>
+                        <a href="index.html"><img  src="logo.png"></a>
+                        <li><a href="ture.html">Vores ture</a></li>
+                        <li><a href="book.html">Book</a></li>
+                        </ul>
+                        
+                </div>
+                <div class="menuhide">
+                    <img class="name" src="name_2.png">  <!-- Script 1 hører til her og skjuler en del af logo på scroll -->
+                </div>
+        <!-- Desktop navigation slut -->
+            </header>
+
+    <main>
+        <div class="fullw-img">
+            <img src="book.jpg" alt="">
+        </div>
+        <div class="sitecontent">
+            <div class="textbox">
+                <h1>Book</h1>
+                <p>Ring på +45 60 66 08 26 for at komme med på en af ugens planlagte ture. 
+                    <br> <br>
+                    Vil du booke en tur mere end en uge ud i fremtiden så brug gerne kontaktformularen.
+                    <br> <br>
+                    Vi tager gerne imod forespørgsler og strikker gerne den perfekte oplevelse sammen hvad end det er til damefrokost, polterabend, fødselsdag eller kæreste tur. 
+                    
+                    </p>
+            </div>
+            <div class="textbox">
+                <div class="container">
+                    <form action="/action_page.php">
+                      <br> <br>
+                      <input type="text" id="fname" name="firstname" placeholder="Din email..">
+                  
+                      <textarea id="subject" name="subject" placeholder="Skriv din besked her.." style="height:100px"></textarea>
+                  
+                      <input type="submit" value="Send">
+                    </form>
+                  </div>
+            </div>
+            <div class="textbox"><div class="mapouter"><div class="gmap_canvas"><iframe width="450" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=sjelborgg%C3%A5rdsvej%2030&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:450px;}</style><a href="https://www.embedgooglemap.net">google maps on webpage</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:450px;}</style></div></div></div>
+            <div class="textbox">
+                <h1>Find vej</h1>
+                <p>Sjelborggård er beliggende Sjelborggårdsvej 30, 6710 Esbjerg
+                    <br> <br>
+                    Kommer du fra Esbjerg bymidte følger du blot strandpromenaden til ende, drejer til venstre og herefter højre. Efter 200m tager du første grusvej på venstre hånd.
+                    <br> <br>
+                    Kør venligts pænt på grusvejen og giv plads til de andre der færdes i plantagen.
+                    <br> <br>
+                    <b>OBS. Du kan låne hjelme på stedet men husk venligst gummistøvler eller anden sko uden snørre.</b>
+                </p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p><a href="tel:+4733378901">+45 60 66 08 26</a></p>
+        <p>Sjelborggård Islænderridning</p>
+        <p><a href="mailto:someone@example.com">ridning@sjelborggård.dk</a></p>
+
+    </footer>
+ 
+
+</body>
+</html>

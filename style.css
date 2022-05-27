@@ -1,0 +1,598 @@
+body{
+    margin: 0;
+}
+
+h1{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;
+}
+
+h2{
+    font-family: 'Abel', sans-serif;
+    font-weight: 100;
+}
+
+p{
+    font-family: 'Abel', sans-serif;
+}
+
+
+
+
+
+
+/* Header + menu*/
+
+header{
+    width: 100%;
+    height: 120px;
+    background-color: aqua;
+}
+
+.menu{
+    width: 100%;
+    height: 120px;
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  
+}
+
+ul {
+    height: inherit;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(219, 210, 210);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  li a:hover {
+    color: rgb(83, 84, 85);
+  }
+
+  .menu img{
+      max-height: 100px;
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .menuhide{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(219, 210, 210);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 120px;
+    z-index: 999;
+}
+
+.menuhide img{
+    margin-left: -10px;
+    margin-top: -10px;
+    max-height: 25px;
+    width: auto;
+}
+/* Header + menu slut*/
+
+
+
+
+
+/* Mobil menu*/
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(219, 210, 210);
+    position: relative;
+    font-family: 'Abel', sans-serif;
+
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+  }
+  
+  .topnav a {
+    color: #5e4352;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    position: relative;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(219, 210, 210);
+    color: #b6a4a4;;
+  }
+  
+  .active {
+    background-color: rgb(219, 210, 210);
+    color: white;
+    height: 80px;
+    display: inline;
+  }
+
+  .mobillogo{
+      max-height: 70px;
+      padding: 5px;
+      
+  }
+
+  .logo{
+    width: 180px;
+    height: 70px;
+    padding-left: 15px;
+  }
+
+
+  /* Mobil menu slut*/
+
+
+
+
+
+
+/* Global sidestruktur*/
+  main{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    
+    align-content: center;
+    flex-direction: column;
+}
+
+.sitecontent{
+    width: 60%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.textbox{
+    width: 40%;
+    height: fit-content;
+    background-color: white;
+    margin: 50px;
+    
+}
+
+.imgbox{
+    width: 40%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* Global sidestruktur slut*/
+
+
+
+
+
+
+/* Vores ture - Farvede logo og overskrifter*/
+.turfarve img{
+    height: 60px;
+    margin-right: 20px;
+}
+
+.turfarve{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+
+
+/* Ikon historie*/
+.vector{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Ikon forside*/
+.vector2{
+    max-width: 50%;
+    height:auto;
+    margin: 50px;
+    
+}
+
+.fullw-img{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.fullw-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* Galleri heste*/
+
+.sitecontentgallery{
+    width: 54%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.horseimg{
+    height: 660px;
+    width: 350px;
+    background-color: rgb(219, 210, 210);
+    text-align: center;
+}
+
+.horseimg img{
+    height: auto;
+    width: 100%;
+}
+.horseimg p{
+margin: 0;
+padding: 0;
+font-size: 20px;
+}
+
+/* Galleri heste slut*/
+
+
+
+
+
+/* Video forside*/
+
+.headervideo {
+    position: relative;
+    background-color: black;
+    height: 50vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    z-index: -999;
+  }
+
+  .headervideo video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .headervideo .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .videotext{
+      width: 100%;
+      height: auto;
+  }
+
+  /* Video slut*/
+
+
+
+
+
+
+  /* Kontaktformular*/
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  input[type=submit] {
+    background-color: #5e4352;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #b6a4a4;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f200;
+    padding: 20px;
+  }
+  /*Kontaktformular stop */
+
+
+
+
+  /* Instagram*/
+  #flockler-embed-1809491df0704f539715ec104399ec45 {
+    --fl-preview-background: #ffffff;
+    --fl-item-background: #ffffff;
+    --fl-text-color: #111111;
+    --fl-link-color: #111111;
+    --fl-link-color-hover: #1771e0;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Abel', sans-serif;
+    margin-top: 60px;
+}
+
+
+
+
+
+/* footer*/
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: #b6a4a4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer p, a{
+    color: #dbd2d2;
+    text-decoration: none;
+}
+/* Footer slut*/
+
+
+
+
+/* Media querries til responsivt*/
+@media screen and (max-width: 2000px) {
+
+    .horseimg{
+        height: 570px;
+        width: 300px;
+        background-color: rgb(219, 210, 210);
+        text-align: center;
+    }
+ }
+@media screen and (max-width: 1450px) {
+
+    .horseimg{
+        height: 390px;
+        width: 200px;
+        background-color: rgb(219, 210, 210);
+        text-align: center;
+    }
+
+    .sitecontent{
+        width: 80%;
+        
+        
+    }
+
+   
+
+    
+
+}
+
+
+@media screen and (max-width: 1050px) {
+    .sitecontent{
+        width: 90%;
+        
+        
+    }
+
+   
+
+    .textbox{
+        width: 35%;
+    }
+
+    .imgbox{
+        margin: 0%;
+    }
+
+    .sitecontentgallery{
+        width: 70%;
+        gap: 20px;
+        }
+
+        .horseimg{
+            height: 390px;
+            width: 200px;
+            background-color: rgb(219, 210, 210);
+            text-align: center;
+        }
+    
+        #flockler-embed-1809491df0704f539715ec104399ec45 {
+            width: 80%;
+              }
+  }
+  
+  @media screen and (max-width: 770px) {
+
+    .sitecontent{
+        width: 85%;
+        
+        
+    }
+    .textbox{
+        width: 70%;
+        height: fit-content;
+        background-color: white;
+        margin: 50px;
+        
+    }
+    
+    .imgbox{
+        width: 30%;
+        margin-bottom: 30px;
+  }
+
+  
+    .horseimg{
+        height: 345px;
+        width: 160px;
+        
+    }
+     
+
+  .vector2{
+    max-width: 100%;
+    height:auto;
+    margin: 0px;
+    
+}
+
+}
+
+@media screen and (max-width: 440px) {
+
+    header{
+        height: 80px;
+    }
+
+    .menu, .menuhide{
+        display: none !important;
+    }
+
+    .sitecontent{
+        width: 80%;
+        
+        
+    }
+    .textbox{
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        margin: 20px;
+        
+    }
+    
+    .imgbox{
+        display: none;
+  }
+
+  .sitecontentgallery{
+    width: 80%;
+    gap: 20px;
+    }
+
+    .horseimg{
+        height: 295px;
+        width: 150px;
+        background-color: rgb(219, 210, 210);
+        text-align: center;
+    }
+
+    .horseimg p{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        }
+
+        footer p{
+            font-size: 12px
+        }
+
+}
+
+
+@media screen and (max-width: 380px) {
+    .horseimg{
+        height: 295px;
+        width: 140px;
+        
+    }
+     }
+
+     @media screen and (max-width: 325px) {
+        .horseimg{
+            height: 240px;
+            width: 110px;
+            
+        }
+
+        footer p{
+            font-size: 10px;
+        }
+         }
